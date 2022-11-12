@@ -1,0 +1,79 @@
+{
+  "bed": {
+    "width": 12000,
+    "height": 2400
+  },
+  "maxStacks": 2,
+  "elements": [
+    {
+      "id": 1,
+      "width": 3831,
+      "height": 1808,
+      "stack": 0,
+      "concrete": "C50"
+    },
+    {
+      "id": 2,
+      "width": 7058,
+      "height": 1492,
+      "stack": 1,
+      "concrete": "C30"
+    },
+    {
+      "id": 3,
+      "width": 3417,
+      "height": 1909,
+      "stack": 0,
+      "concrete": "C50"
+    },
+    {
+      "id": 4,
+      "width": 4689,
+      "height": 830,
+      "stack": 0,
+      "concrete": "C30"
+    },
+    {
+      "id": 5,
+      "width": 2745,
+      "height": 1966,
+      "stack": 1,
+      "concrete": "C30"
+    },
+    {
+      "id": 6,
+      "width": 6663,
+      "height": 1705,
+      "stack": 1,
+      "concrete": "C50"
+    },
+    {
+      "id": 7,
+      "width": 5870,
+      "height": 838,
+      "stack": 0,
+      "concrete": "C30"
+    },
+    {
+      "id": 8,
+      "width": 1811,
+      "height": 1201,
+      "stack": 0,
+      "concrete": "C50"
+    },
+    {
+      "id": 9,
+      "width": 1932,
+      "height": 1408,
+      "stack": 0,
+      "concrete": "C30"
+    },
+    {
+      "id": 10,
+      "width": 5787,
+      "height": 1897,
+      "stack": 1,
+      "concrete": "C50"
+    }
+  ]
+}

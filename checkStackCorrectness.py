@@ -49,10 +49,11 @@ def checkStackCorrectness(inputStr, outputStr):
 
     def clearStackIfInitialStackFinished(e):
         if (len(initialStacks[e['stack']]) == 0):
-            for i in range(maxStacks):
-                if (stacks[i]['id'] == e['id']):
-                    stacks[i] = None
-                    break
+            for i in range(int(maxStacks)):
+                if stacks[i] is not None:
+                    if (stacks[i]['id'] == e['id']):
+                        stacks[i] = None
+                        break
 
     def checkStackCorrectnessImpl(): 
         ok = True
