@@ -1,6 +1,6 @@
 import json
 
-def checkStackCorrectness(inputStr, outputStr):
+def checkConcreteCorrectness(inputStr, outputStr):
 
     input = json.loads(inputStr)
     output = json.loads(outputStr)
@@ -35,7 +35,7 @@ outputStr = ""
 with open(outputFilename, 'r') as f:
     outputStr = f.read()
 
-if (checkStackCorrectness(inputStr, outputStr)):
+if (checkConcreteCorrectness(inputStr, outputStr)):
     print(outputFilename + ": concrete is ok")
 else:
     print(outputFilename + ": concrete is not ok")
