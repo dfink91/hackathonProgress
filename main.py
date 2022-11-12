@@ -33,7 +33,7 @@ ga.chromosome_length = elements_size
 ga.target_fitness_type = 'min'
 
 random.seed(30)
-ga.gene_impl = lambda: random.randint(1,elements_size)
+ga.gene_impl = lambda: random.randint(0,elements_size)
 ga.evolve()
 
 # Print out the current generation and the population
@@ -55,6 +55,8 @@ for u in unique:
         if(s == u):
             output.append(elements[i])
     beds.append({"id": u, "elements": output})
+
+print(solution)
 
 print(beds)
 
