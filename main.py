@@ -15,10 +15,27 @@ elements = data["elements"]
 
 elements_size = len(elements)
 
+def convert_solution_to_output_format(solution):
+    beds = []
+    solution = list(map(lambda x: int(x.value), solution))  
+    unique = np.unique(solution)
+
+    #print(solution)
+
+    for u in unique:
+        output = []
+        for i,s in enumerate(solution):
+            if(s == u):
+                output.append(elements[i])
+        beds.append({"id": u, "elements": output})
+    return beds
+
 def fitness_func(solution):
     solution = np.array(solution)
 
     solution = list(map(lambda x: int(x.value), solution))
+
+    output_format = convert_solution_to_output_format(solution)
 
     unique = np.unique(solution)
 
