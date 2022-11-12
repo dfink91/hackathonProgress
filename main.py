@@ -15,10 +15,15 @@ elements = data["elements"]
 
 elements_size = len(elements)
 
+def convert_solution_to_output_format(solution):
+    
+
 def fitness_func(solution):
     solution = np.array(solution)
 
     solution = list(map(lambda x: int(x.value), solution))
+
+    output_format = convert_solution_to_output_format(solution)
 
     unique = np.unique(solution)
 
