@@ -42,16 +42,17 @@ def fitness_func(solution):
     solution = list(map(lambda x: int(x.value), solution))
 
     output_format = convert_solution_to_output_format(solution)
-    json.dumps(output_format)
+
+    unfitness = 0
     if(checkConcreteCorrectness(json.dumps(data), json.dumps(output_format))):
         print("concrete ok")
     else:
-        print("concrete wrong")
+        unfitness = 10000000
 
 
     unique = np.unique(solution)
 
-    return len(unique)
+    return len(unique+unfitness)
     
 
  
