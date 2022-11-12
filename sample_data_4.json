@@ -60,20 +60,6 @@
       "height": 1201,
       "stack": 0,
       "concrete": "C50"
-    },
-    {
-      "id": 9,
-      "width": 1932,
-      "height": 1408,
-      "stack": 0,
-      "concrete": "C30"
-    },
-    {
-      "id": 10,
-      "width": 5787,
-      "height": 1897,
-      "stack": 1,
-      "concrete": "C50"
     }
   ]
 }

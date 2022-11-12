@@ -22,7 +22,7 @@ def check_if_bed_contains_valid_rectangles(maximum_bed_width, maximum_bed_height
 
         problem = rps.Problem(rectangles=boxes)
 
-        solution = rps.Solver().solve(problem=problem, width_limit = maximum_bed_width, height_limit = maximum_bed_height, show_progress=True, seed=1111, simanneal_minutes=.001)
+        solution = rps.Solver().solve(problem=problem, width_limit = maximum_bed_width, height_limit = maximum_bed_height, show_progress=False, seed=1111, simanneal_minutes=.001)
         
         if solution.floorplan.bounding_box[0] > maximum_bed_width:
             solution_is_good = False
@@ -33,7 +33,7 @@ def check_if_bed_contains_valid_rectangles(maximum_bed_width, maximum_bed_height
 
         solution_beds.append(solution)
 
-        # rps.Visualizer().visualize(solution=solution, path="./floorplan_limit.png")
+        rps.Visualizer().visualize(solution=solution, path="./floorplan_limit.png")
         
     return solution_is_good
 
