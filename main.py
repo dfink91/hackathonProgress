@@ -28,11 +28,9 @@ def convert_solution_to_output_format(solution):
         for i,s in enumerate(solution):
             if(s == u):
                 output.append(elements[i])
-        beds.append({"id": u, "elements": output})
+        beds.append({"id": int(u), "elements": output})
     output = {"beds": beds}
-    print(output)
-    output_json = json.loads(output)
-    print(output_json)
+    output_json = json.dumps(output)
     return {"beds":beds}
 
 def fitness_func(solution):
@@ -43,7 +41,6 @@ def fitness_func(solution):
     solution = list(map(lambda x: int(x.value), solution))
 
     output_format = convert_solution_to_output_format(solution)
-    print(output_format)
     json.dumps(output_format)
     if(checkConcreteCorrectness(json.dumps(data), json.dumps(output_format))):
         print(1)
@@ -55,8 +52,8 @@ def fitness_func(solution):
 
  
 ga.fitness_function_impl = fitness_func
-ga.population_size = 100
-ga.generation_goal = 2
+ga.population_size = 10000
+ga.generation_goal = 10
 ga.chromosome_length = elements_size
 ga.target_fitness_type = 'min'
 
@@ -84,7 +81,7 @@ for u in unique:
             output.append(elements[i])
     beds.append({"id": u, "elements": output})
 
-print(solution)
+#print(solution)
 
-print(beds)
+#print(beds)
 
