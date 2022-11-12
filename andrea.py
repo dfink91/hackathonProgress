@@ -57,7 +57,8 @@ print(f"Maximum width {maximum_bed_width}")
 print(f"Maximum height {maximum_bed_height}")
 
 with open("./outputFormat.json") as f:
-        solution = json.load(f)
+    solution = json.load(f)
+
 
 
 check_if_bed_contains_valid_rectangles(maximum_bed_width, maximum_bed_height, solution)

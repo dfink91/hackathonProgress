@@ -24,18 +24,18 @@ def checkConcreteCorrectness(inputStr, outputStr):
 
 
 
-inputFilename = 'sample_data_1.json'
-outputFilename = 'output1ConcreteOk.json'
+# inputFilename = 'sample_data_1.json'
+# outputFilename = 'output1ConcreteOk.json'
 
-inputStr = ""
-with open(inputFilename, 'r') as f:
-    inputStr = f.read()
+# inputStr = ""
+# with open(inputFilename, 'r') as f:
+#     inputStr = f.read()
 
-outputStr = ""
-with open(outputFilename, 'r') as f:
-    outputStr = f.read()
+# outputStr = ""
+# with open(outputFilename, 'r') as f:
+#     outputStr = f.read()
 
-if (checkConcreteCorrectness(inputStr, outputStr)):
-    print(outputFilename + ": concrete is ok")
-else:
-    print(outputFilename + ": concrete is not ok")
+# if (checkConcreteCorrectness(inputStr, outputStr)):
+#     print(outputFilename + ": concrete is ok")
+# else:
+#     print(outputFilename + ": concrete is not ok")
