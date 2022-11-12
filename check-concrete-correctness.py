@@ -26,9 +26,9 @@ for bed in output['beds']:
         break
 
 if (ok):
-    print(outputFilename + ": is ok")
+    print(outputFilename + ": concrete is ok")
 else:
-    print(outputFilename + ": is not ok")
+    print(outputFilename + ": concrete is not ok")
 
 
 inputFile.close
