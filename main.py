@@ -37,7 +37,6 @@ def convert_solution_to_output_format(solution):
 
 def fitness_func(solution):
     
-
     solution = np.array(solution)
 
     solution = list(map(lambda x: int(x.value), solution))
@@ -45,7 +44,10 @@ def fitness_func(solution):
     output_format = convert_solution_to_output_format(solution)
     json.dumps(output_format)
     if(checkConcreteCorrectness(json.dumps(data), json.dumps(output_format))):
-        print(1)
+        print("concrete ok")
+    else:
+        print("concrete wrong")
+
 
     unique = np.unique(solution)
 
